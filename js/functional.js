@@ -14,6 +14,7 @@ function updateTotal(fieldId, amount) {
     totalTag.innerText = newTotal;
     console.log(previousTotalnNumber);
 }
+// update balance
 function updateBalance(amount, isAdding) {
     const balanceTag = document.getElementById('balance-total');
     const balanceInText = balanceTag.innerText;
@@ -23,7 +24,7 @@ function updateBalance(amount, isAdding) {
         newBalance = previousBalance + amount;
     }
     else {
-        newBalance = previousBalance + amount;
+        newBalance = previousBalance - amount;
     }
     balanceTag.innerText = newBalance;
 
